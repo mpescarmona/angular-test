@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span12">
+      <p>Partial view of contacts</p>
+      <ul class="contacts">
+        <li ng-repeat="contact in contacts">
+          {{contact.name}}
+          <a href="#/contacts/{{contact.id}}">Contact Details</a>
+          <!-- Documentation @ http://docs.angularjs.org/api/ng.directive:ngNonBindable -->
+          <p><code ng-non-bindable>{{contact | json}}</code> {{contact | json}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
