@@ -14,5 +14,6 @@ config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
   $routeProvider.when('/contacts', {templateUrl: 'partials/partialContacts.html', controller: 'ContactController'});
   $routeProvider.when('/contacts/:contactId', {templateUrl: 'partials/partialContactDetails.html', controller: 'ContactDetailController'});
+  $routeProvider.when('/contacts/:contactId/json', {templateUrl: 'partials/partialContactDetailsJson.html', controller: 'ContactDetailController'});
   $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
